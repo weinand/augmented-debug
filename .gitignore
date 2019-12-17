@@ -1,0 +1,6 @@
+out
+node_modules
+.vscode-test/
+*.vsix
+cpp-project/a.out
+cpp-project/a.out.dSYM/**/*
