@@ -8,12 +8,12 @@
 			"name": "C++ Launch",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceRoot}/a.out",
+			"program": "${workspaceFolder}/a.out",
 			"args": [
 				"hello", "world", "!"
 			],
 			"stopAtEntry": true,
-			"cwd": "${workspaceRoot}",
+			"cwd": "${workspaceFolder}",
 			"linux": {
 				"MIMode": "gdb",
 				"miDebuggerPath": "/usr/bin/gdb"
@@ -25,7 +25,8 @@
 				"MIMode": "gdb",
 				"miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
 			},
-			"externalConsole": false
+			"externalConsole": false,
+			"preLaunchTask": "${defaultBuildTask}"
 		}
 	]
 }

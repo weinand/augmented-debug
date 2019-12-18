@@ -15,13 +15,10 @@ The complete source is [here](https://github.com/weinand/augmented-debug/blob/ma
 - run `git clone https://github.com/weinand/augmented-debug.git`
 - run `cd augmented-debug`
 - run `npm install`
-- run `cd cpp-project`
-- run `gcc -g hello.c`
-- run `cd ..`
 - run `code .`
 - install the C++ extension
 - F5 -> new window opens
-- F5 -> debugger breaks on line 4 and VARIABLES view shows a "GPU" scope
+- in new window press F5 -> debugger breaks on line 4 and VARIABLES view shows a "GPU" scope
 - expand GPU scope -> 3 registers are shown
 - continue stepping -> registers under GPU update their values
 
