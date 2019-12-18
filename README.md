@@ -10,6 +10,21 @@ The underlying C++ debugger is unmodified and completely unaware of this.
 The complete source is [here](https://github.com/weinand/augmented-debug/blob/master/src/extension.ts).
 
 
+# Run the Sample
+
+- run `git clone https://github.com/weinand/augmented-debug.git`
+- run `cd augmented-debug`
+- run `npm install`
+- run `cd cpp-project`
+- run `gcc -g hello.c`
+- run `cd ..`
+- run `code .`
+- install the C++ extension
+- F5 -> new window opens
+- F5 -> debugger breaks on line 4 and VARIABLES view shows a "GPU" scope
+- expand GPU scope -> 3 registers are shown
+- continue stepping -> registers under GPU update their values
+
 ## Please Note:
 
 The `vscode.DebugAdapterTracker` API was designed to **tap** the communication between VS Code and debug adapters. It was not designed to **modify** messages in transit. So this example actually shows a use case that is not officially supported.
