@@ -5,7 +5,7 @@ This sample extension shows how a [`vscode.DebugAdapterTracker`](https://github.
 The following screencast shows a new scope "GPU" in the VARIABLES view that is fed by the extension.
 The underlying C++ debugger is unmodified and completely unaware of this.
 
-![feature X](images/gpu.gif)
+![Additional GPU section in VARIABLES view](images/gpu.gif)
 
 The complete source is [here](https://github.com/weinand/augmented-debug/blob/master/src/extension.ts).
 
