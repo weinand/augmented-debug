@@ -7,6 +7,8 @@ The underlying C++ debugger is unmodified and completely unaware of this.
 
 ![feature X](images/gpu.gif)
 
+The complete source is [here](https://github.com/weinand/augmented-debug/blob/master/src/extension.ts).
+
 
 ## Please Note:
 
