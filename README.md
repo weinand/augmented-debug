@@ -1,65 +1,20 @@
-# augmented-debug README
+# Augmented-debug README
 
-This is the README for your extension "augmented-debug". After writing up a brief description, we recommend including the following sections.
+This sample extension shows how a [`vscode.DebugAdapterTracker`](https://github.com/microsoft/vscode/blob/b6ae21e6e2e7255978993df45c1317a869170d21/src/vs/vscode.d.ts#L9649-L9688) can be used to augment a debug session with additional information.
 
-## Features
+The following screencast shows a new scope "GPU" in the VARIABLES view that is fed by the extension.
+The underlying C++ debugger is unmodified and completely unaware of this.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+![feature X](images/gpu.gif)
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## Please Note:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+The `vscode.DebugAdapterTracker` API was designed to **tap** the communication between VS Code and debug adapters. It was not designed to **modify** messages in transit. So this example actually shows a use case that is not officially supported.
 
-## Requirements
+However, we are currently working on another (similar) API that supports intercepting and modifying DAP messages. And as long as this API is not a part of the official VS Code extension API (i.e. `vscode.d.ts`), we will continue to support the "unofficial" use case.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release.

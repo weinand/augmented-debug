@@ -8,7 +8,7 @@
 		"vscode": "^1.42.0"
 	},
 	"activationEvents": [
-		"onDebugAdapterProtocolTracker:cppdbg"
+		"onDebugAdapterProtocolTracker"
 	],
 	"main": "./out/extension.js",
 	"scripts": {
